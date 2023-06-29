@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+ 
+*{
+    font-family: 'Open Sans', sans-serif;
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1{
+    color: rgb(36, 159, 213);
+    font-size: 5.0rem;
+    text-align: center;
+
+}
+
+
+form label{
+    color:gray;
+    font-weight: 4.00rem;
+    font-size: 2.0rem;
+    line-height: 0.5rem;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display:block;
+}
+p{
+    color: gray;
+    font-weight: 4.00rem;
+    font-size: 2.3rem;
+    line-height: 3rem; 
+    padding: 20px 30px;
+    margin: 10px;
+    text-align: center;
+  
+  
+      
+    
+ 
+}
+
+header img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 5px ;   
+    background-repeat:no-repeat;
+}
+
+/* Nav Boostrap */
+.botonera{
+    background-color:rgb(50, 50, 50) ;
+    
+}
+    .botonera img{
+        width: 35px;
+         margin: 5px;  
+        
+    }
+        .botonera ul li a{
+            color:whitesmoke;
+            margin: 20px;
+            margin-left: 70px; 
+            font-size: 12px;
+        
+        }
+        .botonera button{
+             background-color:whitesmoke;
+             
+              margin: 10px;
+        }
+
+
+
+
+
+
+
+
+/* empieza NAV */
+
+/* nav{
+    background-color: rgb(50, 50, 50);
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%; */
+
+    /* flex */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    }
+        nav img{
+            height: 40px;
+            width: 40px;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+
+            
+
+        }
+        nav ul li{
+            margin: 0.2rem;
+            padding: 4rem;
+            
+        }
+             nav ul li a{
+            text-decoration: none;
+            color: silver;
+            font-size: 1.8rem;
+        } */
+/* END NAV */
+
+/* empieza MAIN */
+
+.main{
+    padding: 10px 30px;
+}
+
+main section img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding-top: 60px ;  
+
+}
+
+footer{
+    background-color:rgb(50, 50, 50) ;
+    padding: 10px 30px;
+    margin-top: 40px;
+    list-style:none;
+}
+    footer section svg{
+        width: 40px;
+        height: 40px;
+        fill: white;
+        margin-right: 30px;
+
+    }
+
+main section a{
+    background-color:grey ;
+    color: whitesmoke;
+    padding: 5px;
+}  
+
+
+
+/* selector de grupo */
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: rgb(50, 50, 50);
+    font-size: 3rem;
+    margin: 8px;
+    padding: 20px;
+    
+}
+
+   
+
+  
+.whatsapp{
+    position: fixed;
+    right: 100px;
+    bottom: 65px;
+    width: 50px;
+    height: 50px;
+    fill: green;
+   
+    
+}
+
+.instagram{
+    width:40px;
+    height: 40px;
+    fill:white;
+}
+
+.tiktok{
+    width:40px;
+    height: 40px;
+    fill:white;
+}
+
+.maps{
+    width:40px;
+    height: 40px;
+    fill:white;
+}
+
+
+
+
+/* selector de clase */
+
+
+
+.bg-whitesmoke{
+     background-color: whitesmoke;
+}
+
+.bg-grey{
+    background-color:rgb(50, 50, 50);
+    padding: 25px;
+    margin: 30px;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+.text-colour{
+    color:gray;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.bg-height{
+    background-size:470px 300px;
+}
+
+.bg-blue {
+    background-color:rgba(36, 159, 213, 0.6);;
+    color: whitesmoke;
+    box-shadow:inset;
+}
+  
+.card-title{
+    text-align: center;
+    background-color: rgba(50, 50, 50, 0.7);;
+    color: whitesmoke;
+    margin: 20px;
+    border-radius: 10PX;
+}
+.cards-text{
+    background-color:  rgba(255, 255, 255, 0.6);;
+    border-radius: 10px;
+    padding: 15px;
+    max-height: 3.6em; /* Ajusta este valor según tus necesidades */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Ajusta este valor según tus necesidades */
+    -webkit-box-orient: vertical;
+     white-space:nowrap; /* Evita el salto de línea */
+     overflow:hidden; /* Oculta el contenido desbordado */
+     text-overflow:ellipsis;
+  
+
+}  
+
+.button-cards{
+    background-color: transparent;
+    align-items: center;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content:center;
+    
+  }
+
+
+
+
+/* end selector de clase */
+
+
+
+
+
+/* color de parrafos */
+.paragrph_colour{
+    color:gray;
+    width: 100%;
+    height: auto;
+    margin: 10px auto ;
+    padding: 10px;
+}
+
+/* .box-top{
+   padding: 4px 0;
+   text-align: center;
+   background-color: white;
+   color:rgb(50, 50, 50); 
+   font-size: 1.8rem;
+} */
+
+/* box model */
+.contenedor{
+    background-color:rgba(36, 159, 213, 3) ;
+    width: 90%;
+    height: auto;
+    margin: 50px auto ;
+    padding: 20px 30px;
+    border:solid 1px gray;
+}
+
+.contenedor2{
+    background-color:white;
+    width: 100%;
+    height: auto;
+   
+   
+}
+
+
+/* GRIDS */
+.grid{
+    width: 99%;
+    display: grid;
+  }
+
+
+ .grids-template-columns-row{
+    grid-template-columns: 1fr 1fr; /* Dos columnas del mismo tamaño */
+    grid-template-rows: auto; /* Dos filas del mismo tamaño */
+    gap: 20px;
+    padding: 30px;
+} 
+
+ .text{
+    color: gray;
+    font-size: 2rem ;
+    overflow: hidden;
+    white-space: normal;
+    text-align: center;
+    padding-inline: 1px;
+    padding: 10px;
+    margin: 20px;
+    
+} 
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: rgb(223, 225, 226);
+    border-radius:10px;
+    width: 100%; 
+    height: 100%; 
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgb(38, 38, 38);
+}
+
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+     background-color: rgb(255, 255, 255);
+     padding: 10px;
+     border-radius: 10px;
+     width: 100%; /* Ancho del cuadro al 100% del contenedor */
+     height: 100%; /* Altura del cuadro al 100% del contenedor */
+     box-shadow: 0px 2px 4px rgb(38, 38, 38);
+
+}
+
+
+
+.custom-button{
+    background-color:rgb(249, 249, 71); /* Color de fondo del botón (cambia el valor por el que desees) */
+    color: rgb(13, 13, 13); /* Color del texto del botón */
+    padding: 20px 20px; /* Espaciado interno (padding) del botón (ajusta los valores según necesites) */
+    border: 20px;; /* Elimina el borde del botón si no deseas tener uno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin: 40px;
+    border-radius: 10px;
+    font-size: medium;
+    box-shadow: 0px 2px 4px rgb(38, 38, 38);
+    
+  }
+
+
+
+
+  .clases1{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    margin: 3px;
+    border-radius: 10px;
+    width: 100%; /* Ancho del cuadro al 100% del contenedor */
+     height: 100%;
+     object-fit: cover;
+     box-shadow: 0px 2px 4px rgb(38, 38, 38);
+  }
+
+
+ .row{
+  margin: 30px;
+    
+}  
+
+
+
+
+
+
+
+/* inicia responsive */
+
+@media (width < 768px) {
+    nav{
+        flex-direction: column;
+    }
+    .main img{
+        width: 100%;
+    }
+    .main {
+        flex-direction: column;
+    }
+   
+    .whatsapp {
+        right: 10%;
+    }
+    .grids-template-columns-row{
+        display:inline-block;
+        width: 100%;
+    }
+    .box {
+      
+      margin-bottom: 30px;
+      width: 100%;
+        
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .bg-height{
+        text-align:center;
+    }
+    .cards-text {
+        font-size: 14px; /* Tamaño de fuente para pantallas más pequeñas */
+      }
+}   
