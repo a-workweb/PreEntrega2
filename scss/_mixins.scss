@@ -1,0 +1,51 @@
+//Extends
+.header-general{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    background-repeat: no-repeat;
+    background-image: url(../img/headers/header.png);
+}
+
+.header-servicio_tecnico{
+    @extend .header-general;
+    background-image: url(../img/headers/Header3.jpeg);    
+}
+
+// Mixins:
+@mixin flex($dire,$justify,$align,$wrap){
+    display: flex;
+    flex-direction:$dire ;
+    justify-content: $justify;
+    flex-wrap: $wrap
+}
+
+.clases1{
+    @include flex(row,column ,center ,wrap)
+    }
+
+
+    // Maps
+
+    $paleta:(
+       uno: rgb(36, 159, 213),
+       dos: rgb(50, 50, 50),
+       tres:gray,
+       cuatro: whitesmoke,
+       cinco: rgba(50, 50, 50, 0.7),
+       seis: rgba(255, 255, 255, 0.6),
+       siete: rgb(223, 225, 226),
+       ocho: rgb(249, 249, 71),
+    );
+
+.bg-lightblue{
+    background-color: map-get($map: $paleta, $key:uno );
+} 
+.bg-black{
+    background-color: map-get($map: $paleta, $key:dos );
+}
+.bg-gray{
+    background-color: map-get($map: $paleta, $key:tres );
+}
+

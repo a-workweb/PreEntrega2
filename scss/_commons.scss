@@ -1,0 +1,207 @@
+//todo lo general de mi proyecto
+*{
+    font-family: 'Open Sans', sans-serif;
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1{
+    color: $mainColor;
+    font-size: $textXl;
+    text-align: center;
+
+}h2,
+h3,
+h4,
+h5,
+h6{
+    color: $secondaryColor;
+    font-size: $textLg;
+    margin: 8px;
+    padding: 20px;
+    
+}
+p{
+    color: $keyColor;
+    font-weight: $textRegular;
+    font-size: $textMd;
+    line-height: 3rem; 
+    padding: 20px 30px;
+    margin: 10px;
+    text-align: center;
+  
+}
+header img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 5px ;   
+    background-repeat:no-repeat;
+}
+/* Start Main */
+
+.main{
+    padding: 10px 30px;
+    section{
+        a{
+            background-color:$keyColor ;
+            color: $White;
+            padding: 5px; 
+        }
+    }
+            img{
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+                padding-top: 60px ;
+            }
+}
+
+// start Footer
+footer{
+    background-color:rgb(50, 50, 50) ;
+    padding: 10px 30px;
+    margin-top: 40px;
+    list-style:none;
+        svg{
+            width: 40px;
+            height: 40px;
+            fill: $White;
+            margin-right: 30px;
+        }
+}
+//  end footer
+
+/* End Main */
+
+
+.whatsapp{
+    position: fixed;
+    right: 100px;
+    bottom: 65px;
+    width: 50px;
+    height: 50px;
+    fill: green;
+   
+    
+}
+
+.instagram{
+    width:40px;
+    height: 40px;
+    fill:$White;
+}
+
+.tiktok{
+    width:40px;
+    height: 40px;
+    fill:$White;
+}
+
+.maps{
+    width:40px;
+    height: 40px;
+    fill:$White;
+}
+
+.bg-whitesmoke{
+    background-color: $White;
+}
+
+.bg-grey{
+   background-color:secondaryColor;
+   padding: 25px;
+   margin: 30px;
+   border-radius: 10px;
+   color: $White;
+}
+
+.text-colour{
+   color:$secondaryColor;
+}
+
+.text-center{
+   text-align: center;
+}
+
+.text-left{
+   text-align: left;
+}
+
+.text-right{
+   text-align: right;
+}
+
+.bg-height{
+   background-size:470px 300px;
+}
+
+.bg-blue {
+   background-color:$mainColor;;
+   color: $White;
+   box-shadow:inset;
+}
+ 
+.card-title{
+   text-align: center;
+   background-color: $secondaryColor;;
+   color: $White;
+   margin: 20px;
+   border-radius: 10PX;
+}
+.cards-text{
+   background-color:  rgba(255, 255, 255, 0.6);;
+   border-radius: 10px;
+   padding: 15px;
+   max-height: 3.6em; /* Ajusta este valor según tus necesidades */
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* Ajusta este valor según tus necesidades */
+   -webkit-box-orient: vertical;
+    white-space:nowrap; /* Evita el salto de línea */
+    overflow:hidden; /* Oculta el contenido desbordado */
+    text-overflow:ellipsis;
+ 
+
+}  
+
+.button-cards{
+   background-color: transparent;
+   align-items: center;
+}
+
+
+.button-container {
+   display: flex;
+   justify-content:center;
+   
+ }
+
+ .paragrph_colour{
+    color:$keyColor;
+    width: 100%;
+    height: auto;
+    margin: 10px auto ;
+    padding: 10px;
+}
+
+/* box model */
+.contenedor{
+    background-color:rgba(36, 159, 213, 3) ;
+    width: 90%;
+    height: auto;
+    margin: 50px auto ;
+    padding: 20px 30px;
+    border:solid 1px $keyColor;
+}
+
+.contenedor2{
+    background-color:$White;
+    width: 100%;
+    height: auto;
+   
+}

@@ -1,0 +1,281 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+.header-general, .header-servicio_tecnico {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  background-repeat: no-repeat;
+  background-image: url(../img/headers/header.png);
+}
+
+.header-servicio_tecnico {
+  background-image: url(../img/headers/Header3.jpeg);
+}
+
+.clases1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: column;
+  flex-wrap: wrap;
+}
+
+.bg-lightblue {
+  background-color: rgb(36, 159, 213);
+}
+
+.bg-black {
+  background-color: rgb(50, 50, 50);
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  /* padding: 0;
+  margin: 0; */
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  color: rgb(36, 159, 213);
+  font-size: 2em;
+  text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(50, 50, 50);
+  font-size: 1.6em;
+  margin: 8px;
+  padding: 20px;
+}
+
+p {
+  color: gray;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 3rem;
+  padding: 20px 30px;
+  margin: 10px;
+  text-align: center;
+}
+
+header img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  background-repeat: no-repeat;
+}
+
+/* Start Main */
+.main {
+  padding: 10px 30px;
+}
+.main section a {
+  background-color: gray;
+  color: whitesmoke;
+  padding: 5px;
+}
+.main img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+}
+
+footer {
+  background-color: rgb(50, 50, 50);
+  padding: 10px 30px;
+  margin-top: 40px;
+  list-style: none;
+}
+footer svg {
+  width: 40px;
+  height: 40px;
+  fill: whitesmoke;
+  margin-right: 30px;
+}
+
+/* End Main */
+.whatsapp {
+  position: fixed;
+  right: 100px;
+  bottom: 65px;
+  width: 50px;
+  height: 50px;
+  fill: green;
+}
+
+.instagram {
+  width: 40px;
+  height: 40px;
+  fill: whitesmoke;
+}
+
+.tiktok {
+  width: 40px;
+  height: 40px;
+  fill: whitesmoke;
+}
+
+.maps {
+  width: 40px;
+  height: 40px;
+  fill: whitesmoke;
+}
+
+.bg-whitesmoke {
+  background-color: whitesmoke;
+}
+
+.bg-grey {
+  background-color: secondaryColor;
+  padding: 25px;
+  margin: 30px;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+
+.text-colour {
+  color: rgb(50, 50, 50);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.bg-height {
+  background-size: 470px 300px;
+}
+
+.bg-blue {
+  background-color: rgb(36, 159, 213);
+  color: whitesmoke;
+  box-shadow: inset;
+}
+
+.card-title {
+  text-align: center;
+  background-color: rgb(50, 50, 50);
+  color: whitesmoke;
+  margin: 20px;
+  border-radius: 10PX;
+}
+
+.cards-text {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  padding: 15px;
+  max-height: 3.6em; /* Ajusta este valor según tus necesidades */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Ajusta este valor según tus necesidades */
+  -webkit-box-orient: vertical;
+  white-space: nowrap; /* Evita el salto de línea */
+  overflow: hidden; /* Oculta el contenido desbordado */
+  text-overflow: ellipsis;
+}
+
+.button-cards {
+  background-color: transparent;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.paragrph_colour {
+  color: gray;
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+/* box model */
+.contenedor {
+  background-color: rgb(36, 159, 213);
+  width: 90%;
+  height: auto;
+  margin: 50px auto;
+  padding: 20px 30px;
+  border: solid 1px gray;
+}
+
+.contenedor2 {
+  background-color: whitesmoke;
+  width: 100%;
+  height: auto;
+}
+
+.botonera {
+  background-color: rgb(36, 159, 213);
+}
+.botonera img {
+  width: 35px;
+  margin: 5px;
+}
+.botonera a {
+  color: whitesmoke;
+  margin: 20px;
+  margin-left: 70px;
+  font-size: 1em;
+}
+.botonera button {
+  background-color: whitesmoke;
+  margin: 10px;
+}
+
+@media (width < 768px) {
+  nav {
+    flex-direction: column;
+  }
+  .main img {
+    width: 100%;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .whatsapp {
+    right: 10%;
+  }
+  .grids-template-columns-row {
+    display: inline-block;
+    width: 100%;
+  }
+  .box {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .bg-height {
+    text-align: center;
+  }
+  .cards-text {
+    font-size: 14px; /* Tamaño de fuente para pantallas más pequeñas */
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

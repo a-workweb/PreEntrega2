@@ -18,17 +18,20 @@ h1{
 
 }
 
-
-form label{
-    color:gray;
-    font-weight: 4.00rem;
-    font-size: 2.0rem;
-    line-height: 0.5rem;
-    width: 100%;
-    height: auto;
-    margin: 20px auto;
-    display:block;
+/* selector de grupo */
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: rgb(50, 50, 50);
+    font-size: 3rem;
+    margin: 8px;
+    padding: 20px;
+    
 }
+
+
 p{
     color: gray;
     font-weight: 4.00rem;
@@ -38,10 +41,6 @@ p{
     margin: 10px;
     text-align: center;
   
-  
-      
-    
- 
 }
 
 header img{
@@ -74,55 +73,10 @@ header img{
              
               margin: 10px;
         }
+/* End Boostrap */
 
 
-
-
-
-
-
-
-/* empieza NAV */
-
-/* nav{
-    background-color: rgb(50, 50, 50);
-    padding: 10px 30px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%; */
-
-    /* flex */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items:center;
-    }
-        nav img{
-            height: 40px;
-            width: 40px;
-        }
-
-        nav ul{
-            list-style: none;
-            display: flex;
-
-            
-
-        }
-        nav ul li{
-            margin: 0.2rem;
-            padding: 4rem;
-            
-        }
-             nav ul li a{
-            text-decoration: none;
-            color: silver;
-            font-size: 1.8rem;
-        } */
-/* END NAV */
-
-/* empieza MAIN */
+/* Start Main */
 
 .main{
     padding: 10px 30px;
@@ -135,6 +89,7 @@ main section img{
     padding-top: 60px ;  
 
 }
+
 
 footer{
     background-color:rgb(50, 50, 50) ;
@@ -151,27 +106,13 @@ footer{
     }
 
 main section a{
-    background-color:grey ;
+    background-color:gray ;
     color: whitesmoke;
     padding: 5px;
 }  
+/* End Main */
 
 
-
-/* selector de grupo */
-h2,
-h3,
-h4,
-h5,
-h6{
-    color: rgb(50, 50, 50);
-    font-size: 3rem;
-    margin: 8px;
-    padding: 20px;
-    
-}
-
-   
 
   
 .whatsapp{
@@ -207,8 +148,6 @@ h6{
 
 
 /* selector de clase */
-
-
 
 .bg-whitesmoke{
      background-color: whitesmoke;
@@ -282,13 +221,7 @@ h6{
     
   }
 
-
-
-
 /* end selector de clase */
-
-
-
 
 
 /* color de parrafos */
@@ -300,17 +233,9 @@ h6{
     padding: 10px;
 }
 
-/* .box-top{
-   padding: 4px 0;
-   text-align: center;
-   background-color: white;
-   color:rgb(50, 50, 50); 
-   font-size: 1.8rem;
-} */
-
 /* box model */
-.contenedor{
-    background-color:rgba(36, 159, 213, 3) ;
+/* .contenedor{
+    background-color:rgba(36, 159, 213, 0.3) ;
     width: 90%;
     height: auto;
     margin: 50px auto ;
@@ -324,24 +249,24 @@ h6{
     height: auto;
    
    
-}
+} */
 
 
-/* GRIDS */
+/*  START GRIDS CLASES */
 .grid{
     width: 99%;
     display: grid;
   }
 
 
- .grids-template-columns-row{
+.grids-template-columns-row{
     grid-template-columns: 1fr 1fr; /* Dos columnas del mismo tamaño */
     grid-template-rows: auto; /* Dos filas del mismo tamaño */
     gap: 20px;
     padding: 30px;
 } 
 
- .text{
+.text{
     color: gray;
     font-size: 2rem ;
     overflow: hidden;
@@ -398,7 +323,7 @@ h6{
 
 
 
-  .clases1{
+.clases1{
     display: flex;
     flex-direction:row;
     align-items:center;
@@ -411,10 +336,11 @@ h6{
   }
 
 
- .row{
+.row{
   margin: 30px;
     
 }  
+/* END GRIDS CLASES */
 
 
 
