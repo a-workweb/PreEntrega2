@@ -3,15 +3,24 @@ $mainColor:rgb(36, 159, 213);
 $secondaryColor: rgb(50, 50, 50);
 $keyColor: gray;
 $White: whitesmoke;
+$gray_transparent:rgba(50, 50, 50, 0.7);;
+$white_transparent:rgba(255, 255, 255, 0.6);;
+$yelow:rgba(236, 236, 1);;
+$yelowbright:rgb(255, 255, 6);
+$green:rgb(6, 158, 16);
+$orange: rgb(224, 166, 144); 
+$lightblue-clases:rgba(36, 159, 213,0.6);
+$clearblue:rgba(149, 160, 165, 0.6);
+$blue:rgba(36, 159, 213,0.9);
 
 //fonts
 $mainfont: "Open Sans";
 
 //Sizing:
-$textSm:0.8em;
-$textMd:1em;
-$textLg:1.6em; 
-$textXl:2em;
+$textSm:1em;
+$textMd:1.3em;
+$textLg: 3em; 
+$textXl:5em;
 
 //Weight
 $textBold:600;

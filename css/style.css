@@ -32,6 +32,7 @@ h6{
 }
 
 
+
 p{
     color: gray;
     font-weight: 4.00rem;
@@ -232,25 +233,6 @@ main section a{
     margin: 10px auto ;
     padding: 10px;
 }
-
-/* box model */
-/* .contenedor{
-    background-color:rgba(36, 159, 213, 0.3) ;
-    width: 90%;
-    height: auto;
-    margin: 50px auto ;
-    padding: 20px 30px;
-    border:solid 1px gray;
-}
-
-.contenedor2{
-    background-color:white;
-    width: 100%;
-    height: auto;
-   
-   
-} */
-
 
 /*  START GRIDS CLASES */
 .grid{

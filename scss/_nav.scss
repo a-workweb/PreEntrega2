@@ -1,18 +1,44 @@
 //nesting
-.botonera{
-    background-color: $mainColor;
-        img{
-            width: 35px;
-            margin: 5px;
-           }
-            a{
-                color:$White;
-                margin: 20px;
-                margin-left: 70px; 
-                font-size: $textMd;     
-             }
-                button {
-                        background-color:$White;
-                        margin: 10px;
-                       }
-}
+ 
+.navbar {
+    &.botonera {
+      background-color: $secondaryColor;
+     
+  
+      .navbar-brand {
+        img {
+          width: 35px;
+          margin-left: 20px;
+        }
+      }
+  
+      .navbar-toggler {
+        background-color: $White; 
+        margin-right: 20px;   
+    }
+  
+     
+  
+      .navbar-nav {
+        &.ms-auto {
+          li {
+            margin-left: 20px;
+            color: $White !important;
+          }
+        }
+      }
+  
+      .nav-item {
+        // Estilos de los elementos de la lista
+        .nav-link {
+          color: $White;
+          margin: 20px;
+          margin-left: 70px;
+          font-size: $textMd;
+        }
+      }
+    }
+  }
+  
+  
+  

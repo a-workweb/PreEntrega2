@@ -45,7 +45,7 @@ html {
 
 h1 {
   color: rgb(36, 159, 213);
-  font-size: 2em;
+  font-size: 5em;
   text-align: center;
 }
 
@@ -55,7 +55,7 @@ h4,
 h5,
 h6 {
   color: rgb(50, 50, 50);
-  font-size: 1.6em;
+  font-size: 3em;
   margin: 8px;
   padding: 20px;
 }
@@ -63,7 +63,7 @@ h6 {
 p {
   color: gray;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1.3em;
   line-height: 3rem;
   padding: 20px 30px;
   margin: 10px;
@@ -108,30 +108,30 @@ footer svg {
 }
 
 /* End Main */
-.whatsapp {
+.bi-whatsapp {
   position: fixed;
-  right: 100px;
+  right: 5px;
   bottom: 65px;
   width: 50px;
   height: 50px;
-  fill: green;
+  fill: rgb(6, 158, 16);
 }
 
-.instagram {
-  width: 40px;
-  height: 40px;
+.bi-instagram {
+  width: 35px;
+  height: 35px;
   fill: whitesmoke;
 }
 
-.tiktok {
-  width: 40px;
-  height: 40px;
+.bi-tiktok {
+  width: 35px;
+  height: 35px;
   fill: whitesmoke;
 }
 
-.maps {
-  width: 40px;
-  height: 40px;
+.bi-geo-alt {
+  width: 35px;
+  height: 35px;
   fill: whitesmoke;
 }
 
@@ -139,8 +139,8 @@ footer svg {
   background-color: whitesmoke;
 }
 
-.bg-grey {
-  background-color: secondaryColor;
+.bg-grey, .bg-grey-clases {
+  background-color: rgb(50, 50, 50);
   padding: 25px;
   margin: 30px;
   border-radius: 10px;
@@ -175,7 +175,7 @@ footer svg {
 
 .card-title {
   text-align: center;
-  background-color: rgb(50, 50, 50);
+  background-color: rgba(50, 50, 50, 0.7);
   color: whitesmoke;
   margin: 20px;
   border-radius: 10PX;
@@ -228,22 +228,155 @@ footer svg {
   height: auto;
 }
 
-.botonera {
-  background-color: rgb(36, 159, 213);
+.grid {
+  width: 99%;
+  display: grid;
 }
-.botonera img {
+
+.grids-template-columns-row {
+  grid-template-columns: 1fr 1fr; /* Dos columnas del mismo tamaño */
+  grid-template-rows: auto; /* Dos filas del mismo tamaño */
+  gap: 20px;
+  padding: 30px;
+}
+
+.text, .text-paragraph-2, .text-paragraph {
+  color: gray;
+  font-size: 3em;
+  overflow: hidden;
+  white-space: normal;
+  text-align: center;
+  padding-inline: 1px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.text-paragraph {
+  color: whitesmoke;
+  font-size: 2.2em;
+  background-color: rgba(36, 159, 213, 0.6);
+  border-radius: 0.2em;
+}
+
+.text-paragraph-2 {
+  color: whitesmoke;
+  font-size: 2.2em;
+  background-color: rgba(149, 160, 165, 0.6);
+  border-radius: 0.2em;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgb(50, 50, 50);
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%; /* Ancho del cuadro al 100% del contenedor */
+  height: 100%; /* Altura del cuadro al 100% del contenedor */
+  box-shadow: 0px 2px 4px rgb(50, 50, 50);
+}
+
+.custom-button, .custom-button-yelowbright {
+  background-color: rgb(236, 236, 1); /* Color de fondo del botón (cambia el valor por el que desees) */
+  color: rgb(50, 50, 50); /* Color del texto del botón */
+  padding: 20px 20px; /* Espaciado interno (padding) del botón (ajusta los valores según necesites) */
+  border: 20px; /* Elimina el borde del botón si no deseas tener uno */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  margin: 40px;
+  border-radius: 10px;
+  font-size: medium;
+  box-shadow: 0px 2px 4px rgb(50, 50, 50);
+}
+
+.custom-button-yelowbright {
+  background-color: rgb(255, 255, 6);
+}
+
+.bg-grey-clases {
+  background-color: rgba(36, 159, 213, 0.9);
+}
+
+.clases1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 3px;
+  border-radius: 10px;
+  width: 100%; /* Ancho del cuadro al 100% del contenedor */
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0px 2px 4px rgb(50, 50, 50);
+}
+
+.row {
+  margin: 30px;
+}
+
+/* inicia responsive */
+@media (width < 768px) {
+  nav {
+    flex-direction: column;
+  }
+  .main img {
+    width: 100%;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .whatsapp {
+    right: 10%;
+  }
+  .grids-template-columns-row {
+    display: inline-block;
+    width: 100%;
+  }
+  .box {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .bg-height {
+    text-align: center;
+  }
+  .cards-text {
+    font-size: 14px; /* Tamaño de fuente para pantallas más pequeñas */
+  }
+}
+.navbar.botonera {
+  background-color: rgb(50, 50, 50);
+}
+.navbar.botonera .navbar-brand img {
   width: 35px;
-  margin: 5px;
+  margin-left: 20px;
 }
-.botonera a {
+.navbar.botonera .navbar-toggler {
+  background-color: whitesmoke;
+  margin-right: 20px;
+}
+.navbar.botonera .navbar-nav.ms-auto li {
+  margin-left: 20px;
+  color: whitesmoke !important;
+}
+.navbar.botonera .nav-item .nav-link {
   color: whitesmoke;
   margin: 20px;
   margin-left: 70px;
-  font-size: 1em;
-}
-.botonera button {
-  background-color: whitesmoke;
-  margin: 10px;
+  font-size: 1.3em;
 }
 
 @media (width < 768px) {

@@ -15,7 +15,9 @@ h1{
     font-size: $textXl;
     text-align: center;
 
-}h2,
+}
+
+h2,
 h3,
 h4,
 h5,
@@ -26,6 +28,9 @@ h6{
     padding: 20px;
     
 }
+
+
+
 p{
     color: $keyColor;
     font-weight: $textRegular;
@@ -43,7 +48,11 @@ header img{
     padding: 5px ;   
     background-repeat:no-repeat;
 }
+
+
 /* Start Main */
+
+
 
 .main{
     padding: 10px 30px;
@@ -68,6 +77,7 @@ footer{
     padding: 10px 30px;
     margin-top: 40px;
     list-style:none;
+
         svg{
             width: 40px;
             height: 40px;
@@ -80,32 +90,32 @@ footer{
 /* End Main */
 
 
-.whatsapp{
+.bi-whatsapp{
     position: fixed;
-    right: 100px;
+    right: 5px;
     bottom: 65px;
     width: 50px;
     height: 50px;
-    fill: green;
+    fill: $green;
    
     
 }
 
-.instagram{
-    width:40px;
-    height: 40px;
+.bi-instagram{
+    width:35px;
+    height: 35px;
     fill:$White;
 }
 
-.tiktok{
-    width:40px;
-    height: 40px;
+.bi-tiktok{
+    width:35px;
+    height: 35px;
     fill:$White;
 }
 
-.maps{
-    width:40px;
-    height: 40px;
+.bi-geo-alt{
+    width:35px;
+    height: 35px;
     fill:$White;
 }
 
@@ -114,12 +124,15 @@ footer{
 }
 
 .bg-grey{
-   background-color:secondaryColor;
+   background-color:$secondaryColor;
    padding: 25px;
    margin: 30px;
    border-radius: 10px;
    color: $White;
 }
+
+
+
 
 .text-colour{
    color:$secondaryColor;
@@ -145,17 +158,19 @@ footer{
    background-color:$mainColor;;
    color: $White;
    box-shadow:inset;
+   
+   
 }
  
 .card-title{
    text-align: center;
-   background-color: $secondaryColor;;
+   background-color: $gray_transparent;
    color: $White;
    margin: 20px;
    border-radius: 10PX;
 }
 .cards-text{
-   background-color:  rgba(255, 255, 255, 0.6);;
+   background-color:  $white_transparent;
    border-radius: 10px;
    padding: 15px;
    max-height: 3.6em; /* Ajusta este valor según tus necesidades */
@@ -205,3 +220,158 @@ footer{
     height: auto;
    
 }
+
+// start Grids
+
+.grid{
+    width: 99%;
+    display: grid;
+  }
+
+
+.grids-template-columns-row{
+    grid-template-columns: 1fr 1fr; /* Dos columnas del mismo tamaño */
+    grid-template-rows: auto; /* Dos filas del mismo tamaño */
+    gap: 20px;
+    padding: 30px;
+} 
+
+.text{
+    color: $keyColor;
+    font-size: $textLg ;
+    overflow: hidden;
+    white-space: normal;
+    text-align: center;
+    padding-inline: 1px;
+    padding: 10px;
+    margin: 20px;
+    
+} 
+// extends
+.text-paragraph{
+    @extend .text;
+    color:$White;
+    font-size: 2.2em; 
+    background-color: $lightblue-clases;
+    border-radius: 0.2em;
+}
+.text-paragraph-2{
+    @extend .text;
+    color:$White;
+    font-size: 2.2em; 
+    background-color: $clearblue;
+    border-radius: 0.2em;
+}
+// end extends
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: $White;
+    border-radius:10px;
+    width: 100%; 
+    height: 100%; 
+    padding: 20px;
+    box-shadow: 0px 2px 4px $secondaryColor;
+}
+
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+     background-color: $white_transparent ;
+     padding: 10px;
+     border-radius: 10px;
+     width: 100%; /* Ancho del cuadro al 100% del contenedor */
+     height: 100%; /* Altura del cuadro al 100% del contenedor */
+     box-shadow: 0px 2px 4px $secondaryColor;
+
+}
+
+
+
+.custom-button{
+    background-color: $yelow; /* Color de fondo del botón (cambia el valor por el que desees) */
+    color: $secondaryColor; /* Color del texto del botón */
+    padding: 20px 20px; /* Espaciado interno (padding) del botón (ajusta los valores según necesites) */
+    border: 20px;; /* Elimina el borde del botón si no deseas tener uno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin: 40px;
+    border-radius: 10px;
+    font-size: medium;
+    box-shadow: 0px 2px 4px $secondaryColor;
+    
+  }
+
+  // extends
+  .custom-button-yelowbright{
+    @extend .custom-button;
+    background-color:$yelowbright ;
+}
+
+
+.bg-grey-clases{
+    @extend .bg-grey;
+    background-color: $blue;
+
+}
+// end extends
+.clases1{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    margin: 3px;
+    border-radius: 10px;
+    width: 100%; /* Ancho del cuadro al 100% del contenedor */
+     height: 100%;
+     object-fit: cover;
+     box-shadow: 0px 2px 4px $secondaryColor;
+  }
+
+
+.row{
+  margin: 30px;  
+}  
+
+// end Grids
+
+
+/* inicia responsive */
+
+@media (width < 768px) {
+    nav{
+        flex-direction: column;
+        
+    }
+    .main img{
+        width: 100%;
+    }
+    .main {
+        flex-direction: column;
+    }
+   
+    .whatsapp {
+        right: 10%;
+    }
+    .grids-template-columns-row{
+        display:inline-block;
+        width: 100%;
+    }
+    .box {
+      
+      margin-bottom: 30px;
+      width: 100%;
+        
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .bg-height{
+        text-align:center;
+    }
+    .cards-text {
+        font-size: 14px; /* Tamaño de fuente para pantallas más pequeñas */
+      }
+}   
