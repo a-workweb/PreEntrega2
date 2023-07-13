@@ -73,7 +73,7 @@ h6 {
 p {
   color: gray;
   font-weight: 400;
-  font-size: 1.3em;
+  font-size: 1.5em;
   line-height: 3rem;
   padding: 20px 30px;
   margin: 10px;
@@ -269,7 +269,7 @@ footer svg {
 
 .text, .text-paragraph-3, .text-paragraph-2, .text-paragraph {
   color: gray;
-  font-size: 1.3em;
+  font-size: 1.5em;
   overflow: hidden;
   white-space: normal;
   text-align: center;
@@ -331,7 +331,7 @@ footer svg {
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
   margin: 40px;
   border-radius: 10px;
-  font-size: 1.3em;
+  font-size: 1.5em;
   box-shadow: 0px 2px 4px rgb(50, 50, 50);
 }
 
