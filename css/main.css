@@ -45,8 +45,10 @@ html {
 
 h1 {
   color: rgb(36, 159, 213);
-  font-size: 5em;
+  font-size: 7em;
   text-align: center;
+  animation-name: textAlpha;
+  animation-duration: 6s;
 }
 
 h2,
@@ -60,6 +62,14 @@ h6 {
   padding: 20px;
 }
 
+@keyframes textAlpha {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 p {
   color: gray;
   font-weight: 400;
@@ -107,7 +117,6 @@ footer svg {
   margin-right: 30px;
 }
 
-/* End Main */
 .bi-whatsapp {
   position: fixed;
   right: 5px;
@@ -132,6 +141,24 @@ footer svg {
 .bi-geo-alt {
   width: 35px;
   height: 35px;
+  fill: whitesmoke;
+}
+
+.bi-instagram {
+  width: 3.5em;
+  height: 3.5em;
+  fill: whitesmoke;
+}
+
+.bi-tiktok {
+  width: 3.5em;
+  height: 3.5em;
+  fill: whitesmoke;
+}
+
+.bi-geo-alt {
+  width: 3.5em;
+  height: 3.5em;
   fill: whitesmoke;
 }
 
@@ -240,9 +267,9 @@ footer svg {
   padding: 30px;
 }
 
-.text, .text-paragraph-2, .text-paragraph {
+.text, .text-paragraph-3, .text-paragraph-2, .text-paragraph {
   color: gray;
-  font-size: 3em;
+  font-size: 1.3em;
   overflow: hidden;
   white-space: normal;
   text-align: center;
@@ -255,14 +282,21 @@ footer svg {
   color: whitesmoke;
   font-size: 2.2em;
   background-color: rgba(36, 159, 213, 0.6);
-  border-radius: 0.2em;
+  border-radius: 0.4em;
 }
 
 .text-paragraph-2 {
   color: whitesmoke;
   font-size: 2.2em;
   background-color: rgba(149, 160, 165, 0.6);
-  border-radius: 0.2em;
+  border-radius: 0.4em;
+}
+
+.text-paragraph-3 {
+  color: whitesmoke;
+  font-size: 0.5em;
+  background-color: rgba(149, 160, 165, 0.6);
+  border-radius: 0.4em;
 }
 
 .box {
@@ -290,19 +324,19 @@ footer svg {
 }
 
 .custom-button, .custom-button-yelowbright {
-  background-color: rgb(236, 236, 1); /* Color de fondo del botón (cambia el valor por el que desees) */
+  background-color: rgb(255, 255, 117); /* Color de fondo del botón (cambia el valor por el que desees) */
   color: rgb(50, 50, 50); /* Color del texto del botón */
   padding: 20px 20px; /* Espaciado interno (padding) del botón (ajusta los valores según necesites) */
   border: 20px; /* Elimina el borde del botón si no deseas tener uno */
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
   margin: 40px;
   border-radius: 10px;
-  font-size: medium;
+  font-size: 1.3em;
   box-shadow: 0px 2px 4px rgb(50, 50, 50);
 }
 
 .custom-button-yelowbright {
-  background-color: rgb(255, 255, 6);
+  background-color: rgb(249, 249, 73);
 }
 
 .bg-grey-clases {
@@ -354,7 +388,7 @@ footer svg {
     text-align: center;
   }
   .cards-text {
-    font-size: 14px; /* Tamaño de fuente para pantallas más pequeñas */
+    font-size: 1.4em; /* Tamaño de fuente para pantallas más pequeñas */
   }
 }
 .navbar.botonera {

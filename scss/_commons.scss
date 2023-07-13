@@ -12,9 +12,10 @@ html{
 
 h1{
     color: $mainColor;
-    font-size: $textXl;
+    font-size: $textxxl;
     text-align: center;
-
+    animation-name:textAlpha ;
+    animation-duration: 6s;
 }
 
 h2,
@@ -29,7 +30,12 @@ h6{
     
 }
 
-
+// animaciones: 
+@keyframes textAlpha{
+    from {opacity: 0};
+    to{opacity: 1;}
+}
+// end animaciones: 
 
 p{
     color: $keyColor;
@@ -39,7 +45,7 @@ p{
     padding: 20px 30px;
     margin: 10px;
     text-align: center;
-  
+    
 }
 header img{
     max-width: 100%;
@@ -73,7 +79,7 @@ header img{
 
 // start Footer
 footer{
-    background-color:rgb(50, 50, 50) ;
+    background-color:$secondaryColor ;
     padding: 10px 30px;
     margin-top: 40px;
     list-style:none;
@@ -87,7 +93,7 @@ footer{
 }
 //  end footer
 
-/* End Main */
+
 
 
 .bi-whatsapp{
@@ -118,6 +124,27 @@ footer{
     height: 35px;
     fill:$White;
 }
+// mixins
+@mixin footer($with,$height,$fill){
+    width:$with;
+    height:$height;
+    fill:$fill
+}
+
+.bi-instagram{
+    @include footer(3.5em,3.5em,$White)
+}
+
+.bi-tiktok{
+    @include footer(3.5em,3.5em,$White)
+}
+
+.bi-geo-alt{
+    @include footer(3.5em,3.5em,$White)
+}
+
+// end mixins
+
 
 .bg-whitesmoke{
     background-color: $White;
@@ -155,7 +182,7 @@ footer{
 }
 
 .bg-blue {
-   background-color:$mainColor;;
+   background-color:$mainColor;
    color: $White;
    box-shadow:inset;
    
@@ -206,7 +233,7 @@ footer{
 
 /* box model */
 .contenedor{
-    background-color:rgba(36, 159, 213, 3) ;
+    background-color:$mainColor ;
     width: 90%;
     height: auto;
     margin: 50px auto ;
@@ -238,7 +265,7 @@ footer{
 
 .text{
     color: $keyColor;
-    font-size: $textLg ;
+    font-size: $textMd ;
     overflow: hidden;
     white-space: normal;
     text-align: center;
@@ -253,14 +280,21 @@ footer{
     color:$White;
     font-size: 2.2em; 
     background-color: $lightblue-clases;
-    border-radius: 0.2em;
+    border-radius: 0.4em;
 }
 .text-paragraph-2{
     @extend .text;
     color:$White;
     font-size: 2.2em; 
     background-color: $clearblue;
-    border-radius: 0.2em;
+    border-radius: 0.4em;
+}
+.text-paragraph-3{
+    @extend .text;
+    color:$White;
+    font-size: 0.5em; 
+    background-color: $clearblue;
+    border-radius: 0.4em;
 }
 // end extends
 
@@ -300,7 +334,7 @@ footer{
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     margin: 40px;
     border-radius: 10px;
-    font-size: medium;
+    font-size: $textMd;
     box-shadow: 0px 2px 4px $secondaryColor;
     
   }
@@ -318,6 +352,8 @@ footer{
 
 }
 // end extends
+
+
 .clases1{
     display: flex;
     flex-direction:row;
@@ -372,6 +408,6 @@ footer{
         text-align:center;
     }
     .cards-text {
-        font-size: 14px; /* Tamaño de fuente para pantallas más pequeñas */
+        font-size: 1.4em; /* Tamaño de fuente para pantallas más pequeñas */
       }
 }   
