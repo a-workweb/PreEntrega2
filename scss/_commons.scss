@@ -12,7 +12,7 @@ html{
 
 h1{
     color: $mainColor;
-    font-size: $textxxl;
+    font-size: $textXl;
     text-align: center;
     animation-name:textAlpha ;
     animation-duration: 4s;
@@ -147,8 +147,13 @@ footer{
 // end mixins
 
 
-.bg-whitesmoke{
-    background-color: $White;
+.bg-whitesmoke {
+    background-color: rgba(255, 255, 255, 0.7); /* Cambia el valor 0.5 según el nivel de transparencia que desees (0.0 a 1.0) */
+    font-size: $textMd;
+    border-radius: 1em;
+    text-align: center;
+    margin: 1em;
+    word-spacing: 0.1em;
 }
 
 .bg-grey{
@@ -183,15 +188,27 @@ footer{
 }
 
 .bg-blue {
-   background-color:$mainColor;
+   font-size: $textxSm;
+   border-radius: 1em;
+   background-color:$blue;
    color: $White;
    box-shadow:inset;
-   
+   width: 15em;
+   height: 4em;
+   margin-top: 1em;
+   border-color:$white_transparent;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
    
 }
  
+.btn:hover {
+    background-color: $secondaryColor; 
+    color: $White;
+}
 .card-title{
    text-align: center;
+   font-size: $textLg;
    background-color: $gray_transparent;
    color: $White;
    margin: 20px;

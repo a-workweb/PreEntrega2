@@ -4,6 +4,29 @@
     }
     .main img{
         width: 100%;
+        
+    }
+    .card-img {
+        height: 600px; /* Ajusta esta altura según tus necesidades */
+        object-fit: cover; /* Ajusta el ajuste del objeto según tus necesidades */
+    }
+
+    .card-img-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height:400px; /* Ajusta esta altura según tus necesidades, debe ser la misma que la altura de la imagen */
+        
+    }
+
+    .card-title,
+    .cards-text {
+        margin: 5px; /* Ajusta los márgenes según tus necesidades */
+        text-align:center;
+    }
+    .cards-text {
+        flex: 1; /* Hace que el texto ocupe todo el espacio disponible en la div */
+        overflow-y: auto; /* Añade barras de desplazamiento en caso de que el contenido se desborde */
     }
     .main {
         flex-direction: column;
