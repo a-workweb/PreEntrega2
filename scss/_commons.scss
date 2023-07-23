@@ -12,10 +12,12 @@ html{
 
 h1{
     color: $mainColor;
-    font-size: $textXl;
+    font-size: $textxxl;
     text-align: center;
     animation-name:textAlpha ;
     animation-duration: 4s;
+    font-weight: $textBold;
+    
 }
 
 h2,
@@ -154,14 +156,41 @@ footer{
     text-align: center;
     margin: 1em;
     word-spacing: 0.1em;
+    font-weight: $textRegular;
+}
+.bg-whitesmoke_contacto {
+    background-color: rgba(255, 255, 255, 0.7); /* Cambia el valor 0.5 según el nivel de transparencia que desees (0.0 a 1.0) */
+    font-size: $textxSm;
+    border-radius: 1em;
+    
+    margin: 1em;
+    word-spacing: 0.1em;
+    font-weight: $textRegular;
 }
 
+.text_main{
+    font-size: $textMd;
+    color:$White;
+    font-weight: $textRegular;
+    text-align: center;
+    margin: 0.1em;
+    padding: 0.1em;
+    word-spacing: 0.1em;
+    animation-name:textAlpha ;
+    animation-duration: 4s;
+    flex-direction: column;
+    
+    
+}
+.list-group-item{
+    font-size: $textxSm;
+}
 .bg-grey{
-   background-color:$secondaryColor;
+   background-color:$blue;
    padding: 25px;
-   margin: 30px;
    border-radius: 10px;
    color: $White;
+   
 }
 
 
@@ -209,10 +238,12 @@ footer{
 .card-title{
    text-align: center;
    font-size: $textLg;
+   font-weight: $textBold;
    background-color: $gray_transparent;
    color: $White;
    margin: 20px;
    border-radius: 10PX;
+   letter-spacing: 0.1em;
 }
 .cards-text{
    background-color:  $white_transparent;
@@ -310,8 +341,7 @@ footer{
 .text-paragraph-3{
     @extend .text;
     color:$White;
-    font-size: 0.5em; 
-    background-color: $clearblue;
+    font-size: 0.6em; 
     border-radius: 0.4em;
 }
 // end extends
@@ -345,15 +375,19 @@ footer{
 
 
 .custom-button{
-    background-color: $yelow; /* Color de fondo del botón (cambia el valor por el que desees) */
-    color: $secondaryColor; /* Color del texto del botón */
-    padding: 20px 20px; /* Espaciado interno (padding) del botón (ajusta los valores según necesites) */
-    border: 20px;; /* Elimina el borde del botón si no deseas tener uno */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    background-color: $yelow; 
+    color: $secondaryColor; 
+    padding: 20px 20px;
+    border: 20px;; 
+    cursor: pointer; 
     margin: 40px;
     border-radius: 10px;
     font-size: $textMd;
     box-shadow: 0px 2px 4px $secondaryColor;
+    width: 11em;
+    height: 5em;
+    font-size: $textSm;
+    font-weight: $textBold
     
   }
 
@@ -399,12 +433,22 @@ footer{
         flex-direction: column;
         
     }
+    h1{
+        font-size: $textXl;
+    }
+    .text_main{
+        font-size: $textSm;
+        margin: 1.2em;
+        font-weight: $textRegular;
+    }
+
     .main img{
         width: 100%;
     }
     .main {
         flex-direction: column;
     }
+
    
     .whatsapp {
         right: 10%;
@@ -426,6 +470,6 @@ footer{
         text-align:center;
     }
     .cards-text {
-        font-size: 1.4em; /* Tamaño de fuente para pantallas más pequeñas */
+        font-size: 1.4em; 
       }
 }   
