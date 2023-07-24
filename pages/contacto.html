@@ -65,32 +65,65 @@
 <!--  start Main -->
 <main>
 
- <section class="contacto py-2">
   <h2 class="text-center bg-grey-clases">Contacto:</h2>
-  <div class="row">
-            <form class="bg-whitesmoke_contacto">   
-                    <label for="exampleInputEmail1" class="form-label mb-3 py-3">E-mail </label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">(Sus datos jamas seran compartidos)</div>
-                  
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label mb-3 py-3">Teléfono</label>
-                        <input type="tel" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input " id="exampleCheck1">
-                        <label class="form-check-label mb-3 py-3" for="exampleCheck1">Enviar</label>
-                    </div>
-                    <button type="submit" class="btn bg-blue">Enviar</button>
-                   
-            </form>
-         </div> 
-         <div class="button-container d-flex justify-content-center align-items-center">
+
+
+  <div>
+    <form class="form">
+      <fieldset class="mb-3">
+        <legend>Nombre y apellido</legend>
+        <div class="form-group">
+          <label for="nombre_apellido" class="form-label"></label>
+          <input type="text" class="form-control" id="nombre_apellido" name="nombre_apellido" aria-describedby="nombre_apellido_help">
+          <div id="nombre_apellido_help" class="form-text"></div>
+        </div>
+      </fieldset>
+  
+      <fieldset class="mb-3">
+        <legend>Correo electrónico</legend>
+        <div class="form-group">
+          <label for="correo_electronico" class="form-label"></label>
+          <input type="email" class="form-control" id="correo_electronico" name="correo_electronico" aria-describedby="correo_electronico_help">
+          <div id="correo_electronico_help" class="form-text"></div>
+        </div>
+      </fieldset>
+  
+      <fieldset class="mb-3">
+        <legend>Número de teléfono</legend>
+        <div class="form-group">
+          <label for="numero_telefono" class="form-label"></label>
+          <input type="text" class="form-control" id="numero_telefono" name="numero_telefono" aria-describedby="numero_telefono_help">
+          <div id="numero_telefono_help" class="form-text"></div>
+        </div>
+      </fieldset>
+  
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">(Sus datos jamás seran compartidos)</label>
+      </div>
+      
+      <button type="submit" class="btn btn_contacto">Enviar</button>
+    </form>
+  </div>
+  
+
+  <div >
+    <p class="mb-1"> Ingresar mi equipo urgente: </p>
+  </div>
+  
+         <div class="button-container d-flex justify-content-center align-items-center mb-5">
             <a class="button-cards" href="https://calendly.com/applework-soporte/1hr" target="_blank">
                 <button class="btn bg-blue ">Tomar un turno</button>
             </a>
         </div>
+
+        
+<!--start Maps -->
+<section class="maps" >
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.20381001568!2d-58.41843092575671!3d-34.59900745724685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c513794a67%3A0x1afffa56fbbe5b6b!2sApple%20Work!5e0!3m2!1ses!2sar!4v1690175161185!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
+<!-- End Maps -->
+
 
 
 </main>

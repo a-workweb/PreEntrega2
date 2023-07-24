@@ -158,15 +158,6 @@ footer{
     word-spacing: 0.1em;
     font-weight: $textRegular;
 }
-.bg-whitesmoke_contacto {
-    background-color: rgba(255, 255, 255, 0.7); /* Cambia el valor 0.5 según el nivel de transparencia que desees (0.0 a 1.0) */
-    font-size: $textxSm;
-    border-radius: 1em;
-    
-    margin: 1em;
-    word-spacing: 0.1em;
-    font-weight: $textRegular;
-}
 
 .text_main{
     font-size: $textMd;
@@ -234,7 +225,11 @@ footer{
 .btn:hover {
     background-color: $secondaryColor; 
     color: $White;
+    
 }
+
+
+
 .card-title{
    text-align: center;
    font-size: $textLg;
@@ -391,6 +386,27 @@ footer{
     
   }
 
+.maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.form{
+
+    font-size: $textxSm;
+    margin-left: 8em;
+    margin-right: 8em;
+    margin-top: 6em ;
+    margin-bottom: 4em;
+}
+.btn_contacto{
+    background-color: $gray_transparent;
+    color: $White;
+    border-radius: 0.3em
+    
+}
   // extends
   .custom-button-yelowbright{
     @extend .custom-button;
@@ -463,6 +479,7 @@ footer{
       width: 100%;
         
     }
+   
     .footer{
         flex-direction: column;
     }
