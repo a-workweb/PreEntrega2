@@ -370,8 +370,8 @@ footer{
 
 
 .custom-button{
-    background-color: $yelow; 
-    color: $secondaryColor; 
+    background-color: $gray_transparent; 
+    color: $white_transparent; 
     padding: 20px 20px;
     border: 20px;; 
     cursor: pointer; 
@@ -379,10 +379,11 @@ footer{
     border-radius: 10px;
     font-size: $textMd;
     box-shadow: 0px 2px 4px $secondaryColor;
-    width: 11em;
+    width: 10em;
     height: 5em;
     font-size: $textSm;
-    font-weight: $textBold
+    font-weight: $textLg;
+    border: 1px solid white;
     
   }
 
@@ -410,7 +411,7 @@ footer{
   // extends
   .custom-button-yelowbright{
     @extend .custom-button;
-    background-color:$yelowbright ;
+    background-color:$secondaryColor ;
 }
 
 
