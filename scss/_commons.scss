@@ -372,19 +372,18 @@ footer{
 .custom-button{
     background-color: $gray_transparent; 
     color: $white_transparent; 
-    padding: 20px 20px;
-    border: 20px;; 
+    padding: 10px;
     cursor: pointer; 
     margin: 40px;
     border-radius: 10px;
     font-size: $textMd;
     box-shadow: 0px 2px 4px $secondaryColor;
-    width: 10em;
-    height: 5em;
+    width: 7em;
+    height: 4em;
     font-size: $textSm;
     font-weight: $textLg;
-    border: 1px solid white;
-    
+    border: 1px solid $white_transparent;
+    text-align: center;
   }
 
 .maps{
