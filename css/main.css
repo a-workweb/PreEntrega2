@@ -231,6 +231,20 @@ footer svg {
   transition: background-color 0.3s ease;
 }
 
+.bg-green {
+  font-size: 1.3em;
+  border-radius: 1em;
+  background-color: rgb(6, 158, 16);
+  color: whitesmoke;
+  box-shadow: inset;
+  width: 15em;
+  height: 4em;
+  margin-top: 1em;
+  border-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 .btn:hover {
   background-color: rgb(50, 50, 50);
   color: whitesmoke;
@@ -383,6 +397,7 @@ footer svg {
   justify-content: center;
   align-items: center;
   height: 70vh;
+  margin-top: 2em;
 }
 
 .form {
